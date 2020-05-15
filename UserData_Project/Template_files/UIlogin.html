@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{%static "css/UI.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Add User</title>
+  </head>
+  <body>
+    <div id="background-container">
+      <div style="display: flex; justify-content: space-around">
+        <div class="main-block" id="purple-block">
+          <div class="purple-text-block">
+            <p style="font-size: 40px; font-family: Lobster ">Log In</p>
+            <br><br>
+            <p style="font-size: 15px; font-family: Roboto">Enter User<br> name and password</p>
+          </div>
+        </div>
+        <div class="main-block" id="white-block">
+          <form action="login" method="post">
+            {% csrf_token %}
+            <div>
+              <input
+                type="text"
+                placeholder="Enter user name"
+                class="input-class" name="U_name">
+              <input
+                type="password"
+                placeholder="Enter user password"
+                class="input-class" name="U_pass">
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <!--<a href="home/" style="position: relative; top: 125px">Go To Home</a>-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{%static "css/UIhome.css" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div id="background-container">
+      <div id="main-container">
+        <div class="headings">
+          <p style="font-size: 90px">Welcome User</p>
+          <p id="sub-heading">Select your option</p>
+        </div>
+        <div>
+          <div id="ADD-DELETE-SEARCH-BUTTS">
+            <a href="AddUser/">
+              <button>Add User</button>
+            </a>
+            <a href="DeleteUser/">
+              <button>Delete User</button>
+            </a>
+            <a href="SearchUser/">
+              <button>Search User</button>
+            </a>
+          </div>
+          <br>
+          <div id="UPDATE-USER-BUTTS">
+            <a href="UpdateUser/">
+              <button>Update Info</button>
+            </a>
+            <a href="UserDetails/">
+              <button>User Table</button>
+            </a>
+            <a href="Login/">
+              <button>LogIn</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

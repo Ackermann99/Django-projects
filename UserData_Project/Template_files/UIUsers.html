@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{%static "css/UIUsers.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    rel="stylesheet">
+    <meta charset="utf-8">
+    <title>User Details</title>
+  </head>
+  <body>
+    <div id="background-container">
+      <div style="display: flex; justify-content: space-around">
+        <div class="main-block" id="purple-block">
+          <div class="purple-text-block">
+            <p style="font-size: 40px; font-family: Lobster ">User Details</p>
+            <br><br>
+            <p style="font-size: 15px; font-family: Roboto">Table contains<br>information of all Users.</p>
+          </div>
+        </div>
+        <div class="main-block" id="white-block">
+          {% if users %}
+            <table id="table-id">
+              <th>ID</th>
+              <th id="Name">Name</th>
+              <th>Password</th>
+              {% for u in users %}
+              <tr>
+                <td>{{u.id}}</td>
+                <td>{{u.U_name}}</td>
+                <td>{{u.U_pass}}</td>
+              </tr>
+              {% endfor %}
+            </table>
+            {% else %}
+              <p><span style="color: black font-size: 15px; font-family: Roboto" >No user information.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{%static "css/UI.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Delete User</title>
+  </head>
+  <body>
+    <div id="background-container">
+      <div style="display: flex; justify-content: space-around">
+        <div class="main-block" id="purple-block">
+          <div class="purple-text-block">
+            <p style="font-size: 40px; font-family: Lobster ">Delete User</p>
+            <br><br>
+            <p style="font-size: 15px; font-family: Roboto">Enter User ID<br> you wish to delete</p>
+          </div>
+        </div>
+        <div class="main-block" id="white-block">
+          <form action="delete" method="post">
+            {% csrf_token %}
+            <div>
+              <input
+                type="text"
+                placeholder="Enter user ID"
+                class="input-class" name="U_id">
+            </div>
+            <button type="submit">Delete User</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
