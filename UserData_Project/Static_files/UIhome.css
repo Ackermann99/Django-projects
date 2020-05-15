@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+button{
+  width: 250px;
+  height: 70px;
+  border-radius: 40px;
+  margin-left: 20px;
+  font-size: 25px;
+  background: radial-gradient(rgb(244, 230, 173) 10%, rgb(179, 158, 122));
+  border: none;
+  box-shadow: 2px 4px 7px rgb(154, 152, 137);
+  font-family: "Fredoka One";
+  color: rgb(77, 60, 19);
+  outline: none;
+}
+button:hover{
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+  color: black;
+}
+button:focus{
+  top: 0px;
+  box-shadow: none;
+  background-color: rgb(244, 230, 173);
+  color: rgb(121, 112, 90);
+}
+
+#background-container{
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(rgb(117, 21, 150) 5%,rgb(54, 6, 80)) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
+  width: 70%
+}
+#sub-heading{
+  position: relative;
+  left: 150px;
+  font-size: 30px;
+}
+#ADD-DELETE-SEARCH-BUTTS{
+  display: flex;
+  flex-direction: row;
+}
+#UPDATE-USER-BUTTS{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+.headings{
+  color: rgb(235, 225, 182);
+  font-family: "Lobster";
+  margin-top: 0px;
+}

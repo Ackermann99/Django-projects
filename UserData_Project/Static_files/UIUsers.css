@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+table{
+  width:80%;
+  border-collapse:collapse;
+  text-align:center;
+}
+table,td{
+  border: 1px solid rgb(171, 171, 171);
+}
+th,tr{
+  height: 30px;
+}
+th{
+  background: linear-gradient(to right,rgb(120, 29, 168), rgb(73, 6, 105));
+  color: white;
+}
+
+
+#background-container{
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, rgb(117, 21, 150) 5%,rgb(54, 6, 80)) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#purple-block{
+  width: 20vw;
+  background: linear-gradient(to right,rgb(120, 29, 168), rgb(73, 6, 105));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#white-block{
+  width: 30vw;
+  /*background-color: white;*/
+  background: radial-gradient(rgb(255, 255, 255), rgb(210, 198, 215));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#table-id tr:nth-child(even){
+  background-color: rgb(245, 213, 252);
+}
+#table-id tr:nth-child(odd){
+  background-color: rgb(240, 240, 240);
+}
+#Name{
+  width: 45%;
+}
+
+
+.main-block{
+  height: 70vh;
+}
+.purple-text-block{
+  color: white;
+  position: relative;
+  bottom: 25px;
+}

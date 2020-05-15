@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+input{
+  height: 30px;
+  width: 250px;
+  padding-left: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(179, 179, 179);
+}
+button{
+  width: 100px;
+  height: 25px;
+  margin-top: 30px;
+  font-family: "Roboto";
+  background-color:rgb(117, 21, 150);
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+button:hover{
+  border-bottom: 2px solid rgb(189, 189, 189);
+  cursor: pointer;
+}
+button:focus{
+  position: relative;
+  top: 2px;
+  background-color: rgb(54, 6, 80);
+}
+
+#background-container{
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, rgb(117, 21, 150) 5%,rgb(54, 6, 80)) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#purple-block{
+  width: 20vw;
+  background: linear-gradient(to right,rgb(120, 29, 168), rgb(73, 6, 105));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#white-block{
+  width: 30vw;
+  /*background-color: white;*/
+  background: radial-gradient(rgb(255, 255, 255), rgb(210, 198, 215));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.main-block{
+  height: 70vh;
+}
+.input-class{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.input-class:focus{
+  border: 1px solid rgb(121, 24, 181);
+}
+.purple-text-block{
+  color: white;
+  position: relative;
+  bottom: 25px;
+}
